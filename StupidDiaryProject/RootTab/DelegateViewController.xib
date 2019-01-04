@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DelegateViewController">
+            <connections>
+                <outlet property="agreeBtn" destination="CcT-Z8-wqo" id="r0U-Ff-UqJ"/>
+                <outlet property="bottomHeightCons" destination="9ET-U4-DJ8" id="JYD-cU-CxR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="fSd-Mu-fwU" id="cRp-cH-l7i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSd-Mu-fwU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcT-Z8-wqo">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.47058823529999999" green="0.49019607840000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9ET-U4-DJ8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="同意">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="agreeDelegateBtn:" destination="-1" eventType="touchUpInside" id="Qgs-5l-txn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fSd-Mu-fwU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="840-V9-Tyb"/>
+                <constraint firstItem="CcT-Z8-wqo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QY6-FH-ydb"/>
+                <constraint firstItem="fSd-Mu-fwU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UuW-AQ-0tQ"/>
+                <constraint firstAttribute="trailing" secondItem="CcT-Z8-wqo" secondAttribute="trailing" id="YzA-5y-4By"/>
+                <constraint firstItem="CcT-Z8-wqo" firstAttribute="top" secondItem="fSd-Mu-fwU" secondAttribute="bottom" id="Z6C-i9-Lg5"/>
+                <constraint firstAttribute="bottom" secondItem="CcT-Z8-wqo" secondAttribute="bottom" id="ftA-HR-jpe"/>
+                <constraint firstAttribute="trailing" secondItem="fSd-Mu-fwU" secondAttribute="trailing" id="of5-RW-Coa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

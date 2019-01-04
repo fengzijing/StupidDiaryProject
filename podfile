@@ -1,0 +1,26 @@
+platform :ios, '9.0'
+
+target "StupidDiaryProject" do
+
+pod 'Masonry'  
+pod 'ReactiveObjC'
+pod 'MJRefresh'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'FSCalendar'
+pod 'FMDB'
+pod 'TZImagePickerController'
+#pod 'YYCache'
+
+#请求框架
+pod 'AFNetworking'
+#键盘管理
+pod 'IQKeyboardManager'
+# YY大神框架
+pod 'YYKit'
+#类似系统悬浮圆点
+pod 'XFAssistiveTouch'
+pod 'XYSuspensionMenu', '~>1.0.7'
+
+
+end

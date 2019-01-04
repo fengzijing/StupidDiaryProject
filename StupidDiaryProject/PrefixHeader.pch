@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  StupidDiaryProject
+//
+//  Created by 锋子 on 2019/1/3.
+//  Copyright © 2019 锋子. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Header.h"
+
+#import "AppMacro.h"
+
+#endif /* PrefixHeader_pch */
