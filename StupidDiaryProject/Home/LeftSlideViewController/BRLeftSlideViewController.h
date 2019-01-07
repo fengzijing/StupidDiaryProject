@@ -25,7 +25,7 @@
 #import <UIKit/UIKit.h>
 #import "UIView_extra.h"
 
-@interface LeftSlideViewController : UIViewController
+@interface BRLeftSlideViewController : UIViewController
 
 //滑动速度系数-建议在0.5-1之间。默认为0.5
 @property (nonatomic, assign) CGFloat speedf;

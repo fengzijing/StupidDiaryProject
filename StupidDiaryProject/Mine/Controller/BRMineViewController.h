@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  MineViewController.h
 //  StupidDiaryProject
 //
 //  Created by 锋子 on 2019/1/3.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController
+@interface BRMineViewController : UIViewController
+
+@property (nonatomic,strong) UITableView *tableview;
 
 @end
 

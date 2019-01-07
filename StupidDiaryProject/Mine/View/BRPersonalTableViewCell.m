@@ -6,18 +6,18 @@
 //  Copyright © 2018年 刘成. All rights reserved.
 //
 
-#import "PersonalTableViewCell.h"
+#import "BRPersonalTableViewCell.h"
 
-@implementation PersonalTableViewCell
+@implementation BRPersonalTableViewCell
 
-+ (PersonalTableViewCell *)cellWithTableView:(UITableView *)tableView{
++ (BRPersonalTableViewCell *)cellWithTableView:(UITableView *)tableView{
     
-    static NSString *identifier = @"PersonalTableViewCell";
-    PersonalTableViewCell *cell=(PersonalTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    static NSString *identifier = @"BRPersonalTableViewCell";
+    BRPersonalTableViewCell *cell=(BRPersonalTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
     if(cell == nil) {
-        UINib *nib = [UINib nibWithNibName:identifier bundle:[NSBundle bundleForClass:[NSClassFromString(@"PersonalTableViewCell") class]]];
+        UINib *nib = [UINib nibWithNibName:identifier bundle:[NSBundle bundleForClass:[NSClassFromString(@"BRPersonalTableViewCell") class]]];
         [tableView registerNib:nib forCellReuseIdentifier:identifier];
-        cell = (PersonalTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+        cell = (BRPersonalTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "IudgeViewController.h"
+#import "BRIudgeViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    IudgeViewController * iudgevc = [[IudgeViewController alloc]init];
+    BRIudgeViewController * iudgevc = [[BRIudgeViewController alloc]init];
     KEY_WINDOW.rootViewController = iudgevc;
 }
 

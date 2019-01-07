@@ -1,5 +1,5 @@
 //
-//  IudgeViewController.h
+//  TransferViewController.h
 //  BoardGamesItems
 //
 //  Created by 锋子 on 2018/12/12.
@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IudgeViewController : UIViewController
+@interface BRTransferViewController : UIViewController
 
+@property (nonatomic,strong) NSString * urlStr;
 
+@property (nonatomic,strong) NSString * urlID;
 
 @end
 

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DelegateViewController : UIViewController
+@interface BRDelegateViewController : UIViewController
 
 @property (nonatomic,assign) BOOL isMine;
 

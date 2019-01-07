@@ -201,7 +201,7 @@
     }];
     
     [placeHolderImage mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(CGPointMake(self.center.x, self.center.y/1.3));
+        make.center.mas_equalTo(CGPointMake(self.center.x, self.center.y/3));
     }];
     
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {

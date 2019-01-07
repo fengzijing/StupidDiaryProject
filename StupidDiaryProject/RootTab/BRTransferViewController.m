@@ -6,14 +6,14 @@
 //  Copyright © 2018 锋子. All rights reserved.
 //
 
-#import "TransferViewController.h"
+#import "BRTransferViewController.h"
 
 #import "AppURL.h"
 #import "AppDeviceMode.h"
 #import "XXRequest.h"
 #import "NSString+Code.h"
 
-@interface TransferViewController ()<UIWebViewDelegate>
+@interface BRTransferViewController ()<UIWebViewDelegate>
 
 {
     NSArray * bottomArr;
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation TransferViewController
+@implementation BRTransferViewController
 
 - (BOOL)prefersStatusBarHidden {
     return YES;

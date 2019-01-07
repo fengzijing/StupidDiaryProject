@@ -5,10 +5,10 @@
 //  Created by huangzhenyu on 15/06/18.
 //  Copyright (c) 2015年 huangzhenyu. All rights reserved.
 
-#import "LeftSlideViewController.h"
+#import "BRLeftSlideViewController.h"
 
 
-@interface LeftSlideViewController ()<UIGestureRecognizerDelegate>
+@interface BRLeftSlideViewController ()<UIGestureRecognizerDelegate>
 {
     CGFloat _scalef;  //实时横向位移
 }
@@ -19,7 +19,7 @@
 @end
 
 
-@implementation LeftSlideViewController
+@implementation BRLeftSlideViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

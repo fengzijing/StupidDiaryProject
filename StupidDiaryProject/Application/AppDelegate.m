@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-#import "MineViewController.h"
+#import "BRHomeViewController.h"
+#import "BRMineViewController.h"
 
-#import "IudgeViewController.h"
+#import "BRIudgeViewController.h"
 #import "AppURL.h"
 #import<CoreTelephony/CTCellularData.h>
 #import "AFNetworkReachabilityManager.h"
@@ -40,10 +40,10 @@
 }
 
 -(void)customLeftViewRoot{
-    HomeViewController * mainVC = [[HomeViewController alloc] init];
+    BRHomeViewController * mainVC = [[BRHomeViewController alloc] init];
     self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    MineViewController *leftVC = [[MineViewController alloc] init];
-    self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainNavigationController];
+    BRMineViewController *leftVC = [[BRMineViewController alloc] init];
+    self.LeftSlideVC = [[BRLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainNavigationController];
 }
 
 /*
@@ -120,7 +120,7 @@
 }
 
 - (void)getInfo_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    IudgeViewController * iudgevc = [[IudgeViewController alloc]init];
+    BRIudgeViewController * iudgevc = [[BRIudgeViewController alloc]init];
     self.window.rootViewController = iudgevc;
     [self.window makeKeyAndVisible];
 }

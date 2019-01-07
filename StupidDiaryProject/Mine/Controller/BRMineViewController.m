@@ -9,11 +9,11 @@
 const CGFloat BackGroupHeight = 120;
 const CGFloat HeadImageHeight= 60;
 
-#import "MineViewController.h"
+#import "BRMineViewController.h"
 #import "AppDelegate.h"
-#import "PersonViewController.h"
+#import "BRPersonViewController.h"
 
-@interface MineViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface BRMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UIImageView *imageBG;
     UIImageView *headImageView;
@@ -23,7 +23,7 @@ const CGFloat HeadImageHeight= 60;
 
 @end
 
-@implementation MineViewController
+@implementation BRMineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -138,7 +138,7 @@ const CGFloat HeadImageHeight= 60;
 -(void)setUpHeaderImage{
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC closeLeftView];//关闭左侧抽屉
-    PersonViewController * personVC = [[PersonViewController alloc]init];
+    BRPersonViewController * personVC = [[BRPersonViewController alloc]init];
     [tempAppDelegate.mainNavigationController pushViewController:personVC animated:NO];
 }
 

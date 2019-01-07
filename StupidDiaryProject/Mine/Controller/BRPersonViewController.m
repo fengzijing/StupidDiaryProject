@@ -6,10 +6,10 @@
 //  Copyright © 2018 锋子. All rights reserved.
 //
 
-#import "PersonViewController.h"
-#import "PersonalTableViewCell.h"
+#import "BRPersonViewController.h"
+#import "BRPersonalTableViewCell.h"
 
-@interface PersonViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface BRPersonViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic,strong) UIImage * headerImage;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation PersonViewController
+@implementation BRPersonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -92,7 +92,7 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PersonalTableViewCell* cell = [PersonalTableViewCell cellWithTableView:tableView];
+    BRPersonalTableViewCell* cell = [BRPersonalTableViewCell cellWithTableView:tableView];
     cell.headerImageView.hidden = YES;
     cell.rightField.hidden = NO;
     cell.rightIMageView.hidden = YES;

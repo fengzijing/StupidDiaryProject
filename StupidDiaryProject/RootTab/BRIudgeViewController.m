@@ -6,9 +6,9 @@
 //  Copyright © 2018 锋子. All rights reserved.
 //
 
-#import "IudgeViewController.h"
-#import "TransferViewController.h"
-#import "DelegateViewController.h"
+#import "BRIudgeViewController.h"
+#import "BRTransferViewController.h"
+#import "BRDelegateViewController.h"
 #import "AFNetworkReachabilityManager.h"
 
 #import "AppDelegate.h"
@@ -18,11 +18,11 @@
 #import "XXRequest.h"
 #import "NSString+Code.h"
 
-@interface IudgeViewController ()
+@interface BRIudgeViewController ()
 
 @end
 
-@implementation IudgeViewController
+@implementation BRIudgeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -108,7 +108,7 @@
                     NSDictionary * params = (NSDictionary*)[paramsStr codeStringToDictionary];
                     NSLog(@"params = %@",params);
                     if ([[params objectForKey:@"action_type"] isEqualToString:@"Go_Url"]) {
-                        TransferViewController * web = [[TransferViewController alloc]init];
+                        BRTransferViewController * web = [[BRTransferViewController alloc]init];
                         web.urlID = [params objectForKey:@"action_value"];
                         KEY_WINDOW.rootViewController = web;
                         [KEY_WINDOW makeKeyAndVisible];
@@ -136,7 +136,7 @@
 
 -(void)judgeIsWebView{
     if ([JSUserInfo shareManager].token == nil) {
-        DelegateViewController * delegateController = [DelegateViewController new];
+        BRDelegateViewController * delegateController = [BRDelegateViewController new];
         delegateController.isMine = NO;
         UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
         KEY_WINDOW.rootViewController = foundNav;

@@ -6,13 +6,13 @@
 //  Copyright © 2018年 刘成. All rights reserved.
 //
 
-#import "DelegateViewController.h"
-#import "HomeViewController.h"
-#import "MineViewController.h"
-#import "LeftSlideViewController.h"
+#import "BRDelegateViewController.h"
+#import "BRHomeViewController.h"
+#import "BRMineViewController.h"
+#import "BRLeftSlideViewController.h"
 #import "MJRefresh.h"
 
-@interface DelegateViewController ()<UIWebViewDelegate>
+@interface BRDelegateViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomHeightCons;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation DelegateViewController
+@implementation BRDelegateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,10 +53,10 @@
 
 - (IBAction)agreeDelegateBtn:(UIButton *)sender {
     [JSUserInfo shareManager].token = @"token_key";
-    HomeViewController * mainVC = [[HomeViewController alloc] init];
+    BRHomeViewController * mainVC = [[BRHomeViewController alloc] init];
     UINavigationController *mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    MineViewController *leftVC = [[MineViewController alloc] init];
-    LeftSlideViewController * leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:mainNavigationController];
+    BRMineViewController *leftVC = [[BRMineViewController alloc] init];
+    BRLeftSlideViewController * leftSlideVC = [[BRLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:mainNavigationController];
     KEY_WINDOW.rootViewController = leftSlideVC;
     [KEY_WINDOW makeKeyAndVisible];
 }

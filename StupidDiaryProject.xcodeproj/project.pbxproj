@@ -57,20 +57,27 @@
 		5025060E21DDE8290055CA67 /* JSFastLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 502505E121DDE8290055CA67 /* JSFastLoginModel.m */; };
 		5025060F21DDE8290055CA67 /* JSLocalStorageKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 502505E221DDE8290055CA67 /* JSLocalStorageKit.m */; };
 		5025061021DDE8290055CA67 /* JSUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 502505E321DDE8290055CA67 /* JSUserInfo.m */; };
-		5025062521DDE8F40055CA67 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025061B21DDE8F40055CA67 /* TransferViewController.xib */; };
-		5025062621DDE8F40055CA67 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025061C21DDE8F40055CA67 /* TransferViewController.m */; };
-		5025062721DDE8F40055CA67 /* IudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025061F21DDE8F40055CA67 /* IudgeViewController.xib */; };
-		5025062821DDE8F40055CA67 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025062021DDE8F40055CA67 /* DelegateViewController.m */; };
-		5025062921DDE8F40055CA67 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025062121DDE8F40055CA67 /* DelegateViewController.xib */; };
-		5025062A21DDE8F40055CA67 /* IudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025062321DDE8F40055CA67 /* IudgeViewController.m */; };
-		5025063121DDEB0F0055CA67 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025062F21DDEB0F0055CA67 /* HomeViewController.m */; };
-		5025063621DDEB220055CA67 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025063421DDEB220055CA67 /* MineViewController.m */; };
+		5025062521DDE8F40055CA67 /* BRTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025061B21DDE8F40055CA67 /* BRTransferViewController.xib */; };
+		5025062621DDE8F40055CA67 /* BRTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025061C21DDE8F40055CA67 /* BRTransferViewController.m */; };
+		5025062721DDE8F40055CA67 /* BRIudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025061F21DDE8F40055CA67 /* BRIudgeViewController.xib */; };
+		5025062821DDE8F40055CA67 /* BRDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025062021DDE8F40055CA67 /* BRDelegateViewController.m */; };
+		5025062921DDE8F40055CA67 /* BRDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025062121DDE8F40055CA67 /* BRDelegateViewController.xib */; };
+		5025062A21DDE8F40055CA67 /* BRIudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025062321DDE8F40055CA67 /* BRIudgeViewController.m */; };
+		5025063121DDEB0F0055CA67 /* BRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025062F21DDEB0F0055CA67 /* BRHomeViewController.m */; };
+		5025063621DDEB220055CA67 /* BRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025063421DDEB220055CA67 /* BRMineViewController.m */; };
 		5025063D21DDECA40055CA67 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025063B21DDECA40055CA67 /* UIView_extra.m */; };
-		5025063E21DDECA40055CA67 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025063C21DDECA40055CA67 /* LeftSlideViewController.m */; };
-		5025064221DE04050055CA67 /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025063F21DE04050055CA67 /* PersonViewController.xib */; };
-		5025064321DE04050055CA67 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025064121DE04050055CA67 /* PersonViewController.m */; };
-		5025064721DE04300055CA67 /* PersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025064421DE04300055CA67 /* PersonalTableViewCell.m */; };
-		5025064821DE04300055CA67 /* PersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025064521DE04300055CA67 /* PersonalTableViewCell.xib */; };
+		5025063E21DDECA40055CA67 /* BRLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025063C21DDECA40055CA67 /* BRLeftSlideViewController.m */; };
+		5025064221DE04050055CA67 /* BRPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025063F21DE04050055CA67 /* BRPersonViewController.xib */; };
+		5025064321DE04050055CA67 /* BRPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025064121DE04050055CA67 /* BRPersonViewController.m */; };
+		5025064721DE04300055CA67 /* BRPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5025064421DE04300055CA67 /* BRPersonalTableViewCell.m */; };
+		5025064821DE04300055CA67 /* BRPersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025064521DE04300055CA67 /* BRPersonalTableViewCell.xib */; };
+		50742BE521E34C5F007BFDC8 /* BRDiaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50742BE321E34C5F007BFDC8 /* BRDiaryTableViewCell.m */; };
+		50742BE621E34C5F007BFDC8 /* BRDiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50742BE421E34C5F007BFDC8 /* BRDiaryTableViewCell.xib */; };
+		50C4228021E337250038659A /* MFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C4227F21E337250038659A /* MFDateFormatter.m */; };
+		50C4228421E338770038659A /* BRHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C4228221E338770038659A /* BRHomeTableViewCell.m */; };
+		50C4228521E338770038659A /* BRHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C4228321E338770038659A /* BRHomeTableViewCell.xib */; };
+		50C4228921E347F70038659A /* BRDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C4228721E347F70038659A /* BRDiaryViewController.m */; };
+		50C4228A21E347F70038659A /* BRDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C4228821E347F70038659A /* BRDiaryViewController.xib */; };
 		6DD916B7A01611ED5351E02F /* libPods-StupidDiaryProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5246555EEE8DF945BD5E6CC7 /* libPods-StupidDiaryProject.a */; };
 /* End PBXBuildFile section */
 
@@ -194,32 +201,43 @@
 		502505E421DDE8290055CA67 /* JSFastLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFastLoginModel.h; sourceTree = "<group>"; };
 		502505E521DDE8290055CA67 /* JSLocalStorageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLocalStorageKit.h; sourceTree = "<group>"; };
 		502505E621DDE8290055CA67 /* JSUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSUserInfo.h; sourceTree = "<group>"; };
-		5025061921DDE8F40055CA67 /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
-		5025061B21DDE8F40055CA67 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
-		5025061C21DDE8F40055CA67 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
-		5025061D21DDE8F40055CA67 /* IudgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IudgeViewController.h; sourceTree = "<group>"; };
-		5025061F21DDE8F40055CA67 /* IudgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IudgeViewController.xib; sourceTree = "<group>"; };
-		5025062021DDE8F40055CA67 /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
-		5025062121DDE8F40055CA67 /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
-		5025062221DDE8F40055CA67 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
-		5025062321DDE8F40055CA67 /* IudgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IudgeViewController.m; sourceTree = "<group>"; };
+		5025061921DDE8F40055CA67 /* BRDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDelegateViewController.h; sourceTree = "<group>"; };
+		5025061B21DDE8F40055CA67 /* BRTransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRTransferViewController.xib; sourceTree = "<group>"; };
+		5025061C21DDE8F40055CA67 /* BRTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTransferViewController.m; sourceTree = "<group>"; };
+		5025061D21DDE8F40055CA67 /* BRIudgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRIudgeViewController.h; sourceTree = "<group>"; };
+		5025061F21DDE8F40055CA67 /* BRIudgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRIudgeViewController.xib; sourceTree = "<group>"; };
+		5025062021DDE8F40055CA67 /* BRDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDelegateViewController.m; sourceTree = "<group>"; };
+		5025062121DDE8F40055CA67 /* BRDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRDelegateViewController.xib; sourceTree = "<group>"; };
+		5025062221DDE8F40055CA67 /* BRTransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTransferViewController.h; sourceTree = "<group>"; };
+		5025062321DDE8F40055CA67 /* BRIudgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRIudgeViewController.m; sourceTree = "<group>"; };
 		5025062B21DDE9170055CA67 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		5025062C21DDE9220055CA67 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5025062D21DDEA600055CA67 /* SMPageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageStyle.h; sourceTree = "<group>"; };
-		5025062E21DDEB0F0055CA67 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		5025062F21DDEB0F0055CA67 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		5025063321DDEB220055CA67 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		5025063421DDEB220055CA67 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		5025063921DDECA40055CA67 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		5025062E21DDEB0F0055CA67 /* BRHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRHomeViewController.h; sourceTree = "<group>"; };
+		5025062F21DDEB0F0055CA67 /* BRHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRHomeViewController.m; sourceTree = "<group>"; };
+		5025063321DDEB220055CA67 /* BRMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMineViewController.h; sourceTree = "<group>"; };
+		5025063421DDEB220055CA67 /* BRMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRMineViewController.m; sourceTree = "<group>"; };
+		5025063921DDECA40055CA67 /* BRLeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLeftSlideViewController.h; sourceTree = "<group>"; };
 		5025063A21DDECA40055CA67 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		5025063B21DDECA40055CA67 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
-		5025063C21DDECA40055CA67 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
-		5025063F21DE04050055CA67 /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
-		5025064021DE04050055CA67 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
-		5025064121DE04050055CA67 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
-		5025064421DE04300055CA67 /* PersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewCell.m; sourceTree = "<group>"; };
-		5025064521DE04300055CA67 /* PersonalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalTableViewCell.xib; sourceTree = "<group>"; };
-		5025064621DE04300055CA67 /* PersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableViewCell.h; sourceTree = "<group>"; };
+		5025063C21DDECA40055CA67 /* BRLeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLeftSlideViewController.m; sourceTree = "<group>"; };
+		5025063F21DE04050055CA67 /* BRPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRPersonViewController.xib; sourceTree = "<group>"; };
+		5025064021DE04050055CA67 /* BRPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPersonViewController.h; sourceTree = "<group>"; };
+		5025064121DE04050055CA67 /* BRPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPersonViewController.m; sourceTree = "<group>"; };
+		5025064421DE04300055CA67 /* BRPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPersonalTableViewCell.m; sourceTree = "<group>"; };
+		5025064521DE04300055CA67 /* BRPersonalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BRPersonalTableViewCell.xib; sourceTree = "<group>"; };
+		5025064621DE04300055CA67 /* BRPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPersonalTableViewCell.h; sourceTree = "<group>"; };
+		50742BE221E34C5F007BFDC8 /* BRDiaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDiaryTableViewCell.h; sourceTree = "<group>"; };
+		50742BE321E34C5F007BFDC8 /* BRDiaryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRDiaryTableViewCell.m; sourceTree = "<group>"; };
+		50742BE421E34C5F007BFDC8 /* BRDiaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRDiaryTableViewCell.xib; sourceTree = "<group>"; };
+		50C4227E21E337240038659A /* MFDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFDateFormatter.h; sourceTree = "<group>"; };
+		50C4227F21E337250038659A /* MFDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDateFormatter.m; sourceTree = "<group>"; };
+		50C4228121E338770038659A /* BRHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRHomeTableViewCell.h; sourceTree = "<group>"; };
+		50C4228221E338770038659A /* BRHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRHomeTableViewCell.m; sourceTree = "<group>"; };
+		50C4228321E338770038659A /* BRHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRHomeTableViewCell.xib; sourceTree = "<group>"; };
+		50C4228621E347F70038659A /* BRDiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDiaryViewController.h; sourceTree = "<group>"; };
+		50C4228721E347F70038659A /* BRDiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRDiaryViewController.m; sourceTree = "<group>"; };
+		50C4228821E347F70038659A /* BRDiaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRDiaryViewController.xib; sourceTree = "<group>"; };
 		5246555EEE8DF945BD5E6CC7 /* libPods-StupidDiaryProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StupidDiaryProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7F67DF8D3D558705DF9F64 /* Pods-StupidDiaryProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StupidDiaryProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-StupidDiaryProject/Pods-StupidDiaryProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -569,11 +587,11 @@
 		5025061321DDE8DD0055CA67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5025063321DDEB220055CA67 /* MineViewController.h */,
-				5025063421DDEB220055CA67 /* MineViewController.m */,
-				5025064021DE04050055CA67 /* PersonViewController.h */,
-				5025064121DE04050055CA67 /* PersonViewController.m */,
-				5025063F21DE04050055CA67 /* PersonViewController.xib */,
+				5025063321DDEB220055CA67 /* BRMineViewController.h */,
+				5025063421DDEB220055CA67 /* BRMineViewController.m */,
+				5025064021DE04050055CA67 /* BRPersonViewController.h */,
+				5025064121DE04050055CA67 /* BRPersonViewController.m */,
+				5025063F21DE04050055CA67 /* BRPersonViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -581,9 +599,9 @@
 		5025061421DDE8DD0055CA67 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5025064621DE04300055CA67 /* PersonalTableViewCell.h */,
-				5025064421DE04300055CA67 /* PersonalTableViewCell.m */,
-				5025064521DE04300055CA67 /* PersonalTableViewCell.xib */,
+				5025064621DE04300055CA67 /* BRPersonalTableViewCell.h */,
+				5025064421DE04300055CA67 /* BRPersonalTableViewCell.m */,
+				5025064521DE04300055CA67 /* BRPersonalTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,8 +619,11 @@
 		5025061621DDE8DD0055CA67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5025062E21DDEB0F0055CA67 /* HomeViewController.h */,
-				5025062F21DDEB0F0055CA67 /* HomeViewController.m */,
+				5025062E21DDEB0F0055CA67 /* BRHomeViewController.h */,
+				5025062F21DDEB0F0055CA67 /* BRHomeViewController.m */,
+				50C4228621E347F70038659A /* BRDiaryViewController.h */,
+				50C4228721E347F70038659A /* BRDiaryViewController.m */,
+				50C4228821E347F70038659A /* BRDiaryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -610,6 +631,14 @@
 		5025061721DDE8DD0055CA67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				50C4227E21E337240038659A /* MFDateFormatter.h */,
+				50C4227F21E337250038659A /* MFDateFormatter.m */,
+				50C4228121E338770038659A /* BRHomeTableViewCell.h */,
+				50C4228221E338770038659A /* BRHomeTableViewCell.m */,
+				50C4228321E338770038659A /* BRHomeTableViewCell.xib */,
+				50742BE221E34C5F007BFDC8 /* BRDiaryTableViewCell.h */,
+				50742BE321E34C5F007BFDC8 /* BRDiaryTableViewCell.m */,
+				50742BE421E34C5F007BFDC8 /* BRDiaryTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -617,15 +646,15 @@
 		5025061821DDE8F40055CA67 /* RootTab */ = {
 			isa = PBXGroup;
 			children = (
-				5025061921DDE8F40055CA67 /* DelegateViewController.h */,
-				5025062021DDE8F40055CA67 /* DelegateViewController.m */,
-				5025062121DDE8F40055CA67 /* DelegateViewController.xib */,
-				5025062221DDE8F40055CA67 /* TransferViewController.h */,
-				5025061C21DDE8F40055CA67 /* TransferViewController.m */,
-				5025061B21DDE8F40055CA67 /* TransferViewController.xib */,
-				5025061D21DDE8F40055CA67 /* IudgeViewController.h */,
-				5025062321DDE8F40055CA67 /* IudgeViewController.m */,
-				5025061F21DDE8F40055CA67 /* IudgeViewController.xib */,
+				5025061921DDE8F40055CA67 /* BRDelegateViewController.h */,
+				5025062021DDE8F40055CA67 /* BRDelegateViewController.m */,
+				5025062121DDE8F40055CA67 /* BRDelegateViewController.xib */,
+				5025062221DDE8F40055CA67 /* BRTransferViewController.h */,
+				5025061C21DDE8F40055CA67 /* BRTransferViewController.m */,
+				5025061B21DDE8F40055CA67 /* BRTransferViewController.xib */,
+				5025061D21DDE8F40055CA67 /* BRIudgeViewController.h */,
+				5025062321DDE8F40055CA67 /* BRIudgeViewController.m */,
+				5025061F21DDE8F40055CA67 /* BRIudgeViewController.xib */,
 			);
 			path = RootTab;
 			sourceTree = "<group>";
@@ -633,8 +662,8 @@
 		5025063821DDECA40055CA67 /* LeftSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5025063921DDECA40055CA67 /* LeftSlideViewController.h */,
-				5025063C21DDECA40055CA67 /* LeftSlideViewController.m */,
+				5025063921DDECA40055CA67 /* BRLeftSlideViewController.h */,
+				5025063C21DDECA40055CA67 /* BRLeftSlideViewController.m */,
 				5025063A21DDECA40055CA67 /* UIView_extra.h */,
 				5025063B21DDECA40055CA67 /* UIView_extra.m */,
 			);
@@ -763,15 +792,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C4228521E338770038659A /* BRHomeTableViewCell.xib in Resources */,
 				5025055921DDE53B0055CA67 /* LaunchScreen.storyboard in Resources */,
-				5025062721DDE8F40055CA67 /* IudgeViewController.xib in Resources */,
+				5025062721DDE8F40055CA67 /* BRIudgeViewController.xib in Resources */,
 				5025055621DDE53B0055CA67 /* Assets.xcassets in Resources */,
 				5025060521DDE8290055CA67 /* districts_bak.xml in Resources */,
-				5025062521DDE8F40055CA67 /* TransferViewController.xib in Resources */,
+				50C4228A21E347F70038659A /* BRDiaryViewController.xib in Resources */,
+				5025062521DDE8F40055CA67 /* BRTransferViewController.xib in Resources */,
 				5025055421DDE5290055CA67 /* Main.storyboard in Resources */,
-				5025062921DDE8F40055CA67 /* DelegateViewController.xib in Resources */,
-				5025064221DE04050055CA67 /* PersonViewController.xib in Resources */,
-				5025064821DE04300055CA67 /* PersonalTableViewCell.xib in Resources */,
+				5025062921DDE8F40055CA67 /* BRDelegateViewController.xib in Resources */,
+				50742BE621E34C5F007BFDC8 /* BRDiaryTableViewCell.xib in Resources */,
+				5025064221DE04050055CA67 /* BRPersonViewController.xib in Resources */,
+				5025064821DE04300055CA67 /* BRPersonalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,7 +894,7 @@
 				5025060021DDE8290055CA67 /* JSImageModel.m in Sources */,
 				5025060321DDE8290055CA67 /* JSCommonAlertView.m in Sources */,
 				502505EB21DDE8290055CA67 /* JS3DImageViewController.m in Sources */,
-				5025062A21DDE8F40055CA67 /* IudgeViewController.m in Sources */,
+				5025062A21DDE8F40055CA67 /* BRIudgeViewController.m in Sources */,
 				502505FD21DDE8290055CA67 /* JSImageBrowser.m in Sources */,
 				502505F121DDE8290055CA67 /* UIView+addGradualLayer.m in Sources */,
 				502505EC21DDE8290055CA67 /* UIViewController+BackgroundAlpha.m in Sources */,
@@ -871,19 +903,21 @@
 				502505FF21DDE8290055CA67 /* LBTapDetectingImageView.m in Sources */,
 				5025055C21DDE53B0055CA67 /* main.m in Sources */,
 				502505E921DDE8290055CA67 /* UINavigationBar+BackgroundColor.m in Sources */,
-				5025063621DDEB220055CA67 /* MineViewController.m in Sources */,
+				5025063621DDEB220055CA67 /* BRMineViewController.m in Sources */,
 				502505F021DDE8290055CA67 /* NSString+Code.m in Sources */,
-				5025063121DDEB0F0055CA67 /* HomeViewController.m in Sources */,
+				5025063121DDEB0F0055CA67 /* BRHomeViewController.m in Sources */,
 				5025060A21DDE8290055CA67 /* PhotoDetailsCollectionViewCell.m in Sources */,
 				5025060121DDE8290055CA67 /* JSPictureManager.m in Sources */,
 				5025060D21DDE8290055CA67 /* AllAlbumCollectionViewCell.m in Sources */,
+				50C4228421E338770038659A /* BRHomeTableViewCell.m in Sources */,
 				5025054E21DDE5290055CA67 /* AppDelegate.m in Sources */,
-				5025063E21DDECA40055CA67 /* LeftSlideViewController.m in Sources */,
+				5025063E21DDECA40055CA67 /* BRLeftSlideViewController.m in Sources */,
 				502505F721DDE8290055CA67 /* LBPhotoBrowserConst.m in Sources */,
-				5025064721DE04300055CA67 /* PersonalTableViewCell.m in Sources */,
+				5025064721DE04300055CA67 /* BRPersonalTableViewCell.m in Sources */,
 				5025060421DDE8290055CA67 /* JSSelectViewTool.m in Sources */,
 				502505ED21DDE8290055CA67 /* UITextView+CustomFont.m in Sources */,
-				5025062821DDE8F40055CA67 /* DelegateViewController.m in Sources */,
+				5025062821DDE8F40055CA67 /* BRDelegateViewController.m in Sources */,
+				50C4228021E337250038659A /* MFDateFormatter.m in Sources */,
 				502505EF21DDE8290055CA67 /* NSDictionary+codeString.m in Sources */,
 				502505EE21DDE8290055CA67 /* JSImageManager.m in Sources */,
 				5025063D21DDECA40055CA67 /* UIView_extra.m in Sources */,
@@ -892,15 +926,17 @@
 				502505FE21DDE8290055CA67 /* LBZoomScrollView.m in Sources */,
 				5025060221DDE8290055CA67 /* JSDatePickerViewManager.m in Sources */,
 				5025061021DDE8290055CA67 /* JSUserInfo.m in Sources */,
+				50742BE521E34C5F007BFDC8 /* BRDiaryTableViewCell.m in Sources */,
 				5025060821DDE8290055CA67 /* GroupTableViewController.m in Sources */,
-				5025064321DE04050055CA67 /* PersonViewController.m in Sources */,
+				5025064321DE04050055CA67 /* BRPersonViewController.m in Sources */,
 				502505EA21DDE8290055CA67 /* UITableView+JSCustom.m in Sources */,
 				5025060721DDE8290055CA67 /* GroupTableViewCell.m in Sources */,
-				5025062621DDE8F40055CA67 /* TransferViewController.m in Sources */,
+				5025062621DDE8F40055CA67 /* BRTransferViewController.m in Sources */,
 				502505F421DDE8290055CA67 /* AppURL.m in Sources */,
 				5025060B21DDE8290055CA67 /* PhotoDetailsCollectionViewController.m in Sources */,
 				502505E821DDE8290055CA67 /* UIViewController+TouchAvatar.m in Sources */,
 				502505FA21DDE8290055CA67 /* LBPhotoBrowserView.m in Sources */,
+				50C4228921E347F70038659A /* BRDiaryViewController.m in Sources */,
 				502505F321DDE8290055CA67 /* XXToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
