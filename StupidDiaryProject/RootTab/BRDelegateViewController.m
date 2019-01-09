@@ -11,6 +11,7 @@
 #import "BRMineViewController.h"
 #import "BRLeftSlideViewController.h"
 #import "MJRefresh.h"
+#import "AppDelegate.h"
 
 @interface BRDelegateViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -53,11 +54,8 @@
 
 - (IBAction)agreeDelegateBtn:(UIButton *)sender {
     [JSUserInfo shareManager].token = @"token_key";
-    BRHomeViewController * mainVC = [[BRHomeViewController alloc] init];
-    UINavigationController *mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    BRMineViewController *leftVC = [[BRMineViewController alloc] init];
-    BRLeftSlideViewController * leftSlideVC = [[BRLeftSlideViewController alloc] initWithLeftView:leftVC andMainView:mainNavigationController];
-    KEY_WINDOW.rootViewController = leftSlideVC;
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    KEY_WINDOW.rootViewController = tempAppDelegate.LeftSlideVC;
     [KEY_WINDOW makeKeyAndVisible];
 }
 

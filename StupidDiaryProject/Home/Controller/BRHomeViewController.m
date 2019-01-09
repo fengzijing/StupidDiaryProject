@@ -38,8 +38,27 @@
     [self cusotmDataSource:[[MFDateFormatter share] stringOfDate:[NSDate date] format:formatterStr]];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:self action:@selector(openOrCloseLeftList)];
+    UIButton * selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    selectBtn.frame = CGRectMake(0, 0, 30, 30);
+    UIImage * image = [[UIImage alloc]init];
+//    if ([JSUserInfo shareManager].header_image != nil) {
+//        image = [JSUserInfo shareManager].header_image;
+//        selectBtn.layer.cornerRadius = 15;
+//        selectBtn.layer.masksToBounds = YES;
+//        selectBtn.contentMode = UIViewContentModeScaleToFill;
+//    }else{
+        image = [UIImage imageNamed:@"menu"];
+//    }
+    [selectBtn setImage:image forState:UIControlStateNormal];
+    [selectBtn addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:selectBtn];
     [self customDiaryView];
+    @weakify(self);
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"refreshDiaryClassNotication" object:nil]takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {
+        @strongify(self);
+        NSString *formatterStr = @"yyyy.MM.dd";
+        [self cusotmDataSource:[[MFDateFormatter share] stringOfDate:self.calendar.selectedDate format:formatterStr]];
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -63,7 +82,7 @@
 -(void)customDiaryView{
     [self.view addSubview:_tableView];
     UIButton*btn=[[UIButton alloc]initWithFrame:CGRectMake(0,0,50,50)];
-    [btn setBackgroundImage:[UIImage imageNamed:@"add_games"] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:@"add_diary"] forState:UIControlStateNormal];
 //    btn.backgroundColor=[UIColor orangeColor];
     [btn addTarget:self action:@selector(beginWriteDiary) forControlEvents:UIControlEventTouchUpInside];
     btn.layer.cornerRadius=25;
@@ -127,14 +146,14 @@
     lunarChars = @[@"初一",@"初二",@"初三",@"初四",@"初五",@"初六",@"初七",@"初八",@"初九",@"初十",@"十一",@"十二",@"十三",@"十四",@"十五",@"十六",@"十七",@"十八",@"十九",@"廿十",@"廿一",@"廿二",@"廿三",@"廿四",@"廿五",@"廿六",@"廿七",@"廿八",@"廿九",@"三十"];
     lunarMonths = @[@"正月",@"二月",@"三月",@"四月",@"五月",@"六月",@"七月",@"八月",@"九月",@"十月",@"冬月",@"腊月"];
     [self.view addSubview:self.calendar];
-    currentScope = FSCalendarScopeWeek;
-    //    currentScope = FSCalendarScopeMonth;
+//    currentScope = FSCalendarScopeWeek;
+    currentScope = FSCalendarScopeMonth;
     self.calendar.scope = currentScope;
     
     if (ScreenHeight>736) {
-        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.calendar.frame), ScreenWidth, ScreenHeight-176- CGRectGetMaxY(self.calendar.frame));
+        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.calendar.frame), ScreenWidth, ScreenHeight-88- CGRectGetMaxY(self.calendar.frame));
     }else{
-        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.calendar.frame), ScreenWidth, ScreenHeight-112- CGRectGetMaxY(self.calendar.frame));
+        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.calendar.frame), ScreenWidth, ScreenHeight-64- CGRectGetMaxY(self.calendar.frame));
     }
 
     self.calendar.backgroundColor = SMColorFromRGB(0xFFFFFF);
@@ -159,13 +178,12 @@
 }
 
 -(void)cusotmDataSource:(NSString*)date{
-    
+//    [JSUserInfo shareManager].allArray = [NSMutableArray array];
     NSMutableArray * arr = [NSMutableArray array];
     NSMutableArray * array = [JSUserInfo shareManager].allArray;
     if (array.count>0) {
         for (JSFastLoginModel * model in array) {
-            NSString * str = [NSString stringWithFormat:@"%@.%@",model.class_year,model.class_day];
-            if ([date isEqualToString:str]) {
+            if ([date isEqualToString:model.class_date]) {
                 [arr addObject:model];
             }
         }
@@ -262,12 +280,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    if (self.dataArr.count == 0) {
-//        [self.tableView showEmptyView];
-//    } else {
-//        [self.tableView hideEmptyView];
-//    }
-    return 10;//self.dataArr.count;
+    if (self.dataArr.count == 0) {
+        [self.tableView showEmptyView];
+    } else {
+        [self.tableView hideEmptyView];
+    }
+    return self.dataArr.count;
 }
 
 
@@ -298,15 +316,47 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    JSFastLoginModel * model = self.dataArr[indexPath.row];
     BRHomeTableViewCell* cell = [BRHomeTableViewCell cellWithTableView:tableView];
+    cell.dateLabel.text = model.class_date;
+    cell.weekLabel.text = model.class_week;
+    cell.noteLabel.text = model.class_note;
+    cell.timeLabel.text = model.class_hour;
+    [cell.deleteBtn addTarget:self action:@selector(deleteDiary:) forControlEvents:UIControlEventTouchUpInside];
+    cell.deleteBtn.tag = 1200+indexPath.row;
+    
     return cell;
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    JSFastLoginModel * model = self.dataArr[indexPath.row];
+    BRDiaryViewController * diaryVC = [[BRDiaryViewController alloc]init];
+    diaryVC.isEditor = NO;
+    diaryVC.model = model;
+    [self.navigationController pushViewController:diaryVC animated:YES];
 }
 
+
+-(void)deleteDiary:(UIButton*)sender{
+    WS(wSelf);
+    JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:NSLocalizedString(@"确定删除该日记？", nil)  textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
+    [alter showAlertView:NSLocalizedString(@"否", nil) sureTitle:NSLocalizedString(@"是", nil) cancelBlock:^{
+        
+    } sureBlock:^{
+        JSFastLoginModel * model = self.dataArr[sender.tag-1200];
+        [wSelf.dataArr removeObjectAtIndex:sender.tag-1200];
+        [wSelf.tableView reloadData];
+        NSMutableArray * array = [JSUserInfo shareManager].allArray;
+        for (NSInteger i=0; i<array.count; i++) {
+            JSFastLoginModel * allModel = array[i];
+            if ([allModel.class_date isEqualToString:model.class_date]&&[allModel.class_second isEqualToString:model.class_second]&&[allModel.class_hour isEqualToString:model.class_hour]) {
+                [array removeObject:allModel];
+                continue;
+            }
+        }
+        [JSUserInfo shareManager].allArray = array;
+    }];
+}
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     if (currentScope == FSCalendarScopeWeek) {
@@ -372,11 +422,11 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 112) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStyleGrouped];
         if (ScreenHeight>736) {
-            _tableView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight-88);
+            _tableView.frame = CGRectMake(0, CGRectGetMaxY(self.calendar.frame), ScreenWidth, ScreenHeight-88- CGRectGetMaxY(self.calendar.frame));
         }else{
-            _tableView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight-64);
+            _tableView.frame = CGRectMake(0, CGRectGetMaxY(self.calendar.frame), ScreenWidth, ScreenHeight-64- CGRectGetMaxY(self.calendar.frame));
         }
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.delegate = self;

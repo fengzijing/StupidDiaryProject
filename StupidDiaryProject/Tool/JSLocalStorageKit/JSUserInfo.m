@@ -79,8 +79,8 @@
         JSFastLoginModel *model2 = obj2;
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat: @"yyyy.MM.dd HH:mm ss"];
-        NSString * time1 = [NSString stringWithFormat:@"%@.%@ %@",model1.class_year,model1.class_day,model1.class_hour];
-        NSString * time2 = [NSString stringWithFormat:@"%@.%@ %@",model2.class_year,model2.class_day,model2.class_hour];
+        NSString * time1 = [NSString stringWithFormat:@"%@ %@ %@",model1.class_date,model1.class_hour,model1.class_second];
+        NSString * time2 = [NSString stringWithFormat:@"%@ %@ %@",model2.class_date,model2.class_hour,model2.class_second];
         NSDate *date1= [dateFormatter dateFromString:time1];
         NSDate *date2= [dateFormatter dateFromString:time2];
         

@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *noteLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
-@property (weak, nonatomic) IBOutlet UIButton *diaryBtn;
 
 
 + (BRHomeTableViewCell *)cellWithTableView:(UITableView *)tableView;

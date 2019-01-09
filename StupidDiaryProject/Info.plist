@@ -47,6 +47,12 @@
 		<true/>
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
-	<string></string>
+	<string>允许访问日历</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>允许访问多媒体</string>
+	<key>NSCameraUsageDescription</key>
+	<string>允许访问相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>允许访问相册</string>
 </dict>
 </plist>

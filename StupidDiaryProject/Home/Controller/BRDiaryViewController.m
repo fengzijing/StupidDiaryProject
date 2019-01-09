@@ -24,15 +24,43 @@
     self.tableView.dataSource = self;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"保存", nil) style:UIBarButtonItemStylePlain target:self action:@selector(saveDiary)];
     if (self.isEditor) {
-        self.model.class_date = [[MFDateFormatter share] stringOfDate:[NSDate date] format:@"yyyy.MM.dd"];
-        self.model.class_hour = [[MFDateFormatter share] stringOfDate:[NSDate date] format:@"HH:ss"];
-    } else {
-        
+        [self customTimeModel];
     }
 }
 
+-(void)customTimeModel{
+    NSArray * arrWeek=[NSArray arrayWithObjects:NSLocalizedString(@"周六", nil),NSLocalizedString(@"周日", nil),NSLocalizedString(@"周一", nil),NSLocalizedString(@"周二", nil),NSLocalizedString(@"周三", nil),NSLocalizedString(@"周四", nil),NSLocalizedString(@"周五", nil), nil];
+    NSDate *date = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    NSInteger unitFlags = NSCalendarUnitYear |NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitWeekday | NSCalendarUnitHour |NSCalendarUnitMinute |NSCalendarUnitSecond;
+    comps = [calendar components:unitFlags fromDate:date];
+    NSInteger week = [comps weekday];
+    NSInteger seconds = [comps second];
+    self.model.class_second = [NSString stringWithFormat:@"%ld",(long)seconds];
+    self.model.class_week = [arrWeek objectAtIndex:week%7];
+    self.model.class_date = [[MFDateFormatter share] stringOfDate:[NSDate date] format:@"yyyy.MM.dd"];
+    self.model.class_hour = [[MFDateFormatter share] stringOfDate:[NSDate date] format:@"HH:mm"];
+}
+
 -(void)saveDiary{
-    
+    if (self.model.class_note.length==0) {
+        [SVProgressHUD showInfoWithStatus:@"请填写您的日记"];
+        return;
+    }
+    NSMutableArray * array = [JSUserInfo shareManager].allArray;
+    for (NSInteger i=0; i<array.count; i++) {
+        JSFastLoginModel * allModel = array[i];
+        if ([allModel.class_date isEqualToString:self.model.class_date]&&[allModel.class_second isEqualToString:self.model.class_second]&&[allModel.class_hour isEqualToString:self.model.class_hour]) {
+            [array removeObject:allModel];
+            continue;
+        }
+    }
+    [array addObject:self.model];
+    [JSUserInfo shareManager].allArray = array;
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"refreshDiaryClassNotication" object:nil userInfo:nil];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"refreshAllDiaryClassNotication" object:nil userInfo:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 # pragma mark - UITableViewDelegate UITableViewDatasource

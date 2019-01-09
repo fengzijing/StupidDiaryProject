@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  StupidDiaryProject
+
+  Created by 锋子 on 2019/1/9.
+  Copyright © 2019 锋子. All rights reserved.
+*/
+
+CFBundleDisplayName = "笨笨日记";
+
+"NSPhotoLibraryUsageDescription" = "笨笨日记需要访问您的相册，帮助完成您的个人头像更换";
+"NSCameraUsageDescription" = "笨笨日记需要访问您的相机，帮助完成您的个人头像更换";
+"NSAppleMusicUsageDescription" = "笨笨日记需要访问您的多媒体，帮助完成您的个人头像更换";
+"NSCalendarsUsageDescription" = "笨笨日记请求允许访问您的日历信息";

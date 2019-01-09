@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-3K-a6u">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-3K-a6u">
                     <rect key="frame" x="-187.5" y="-24" width="750" height="735"/>
                 </imageView>
             </subviews>
@@ -34,6 +34,6 @@
         </view>
     </objects>
     <resources>
-        <image name="launch_icon.jpg" width="750" height="1334"/>
+        <image name="launch_icon.png" width="750" height="1334"/>
     </resources>
 </document>

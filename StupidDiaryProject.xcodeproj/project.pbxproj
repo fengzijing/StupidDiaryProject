@@ -73,6 +73,13 @@
 		5025064821DE04300055CA67 /* BRPersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5025064521DE04300055CA67 /* BRPersonalTableViewCell.xib */; };
 		50742BE521E34C5F007BFDC8 /* BRDiaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50742BE321E34C5F007BFDC8 /* BRDiaryTableViewCell.m */; };
 		50742BE621E34C5F007BFDC8 /* BRDiaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50742BE421E34C5F007BFDC8 /* BRDiaryTableViewCell.xib */; };
+		50742BEA21E436BE007BFDC8 /* BRAllDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50742BE821E436BE007BFDC8 /* BRAllDiaryViewController.m */; };
+		50742BEB21E436BE007BFDC8 /* BRAllDiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50742BE921E436BE007BFDC8 /* BRAllDiaryViewController.xib */; };
+		50742BEF21E43DAD007BFDC8 /* BRAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50742BED21E43DAD007BFDC8 /* BRAboutUsViewController.m */; };
+		50742BF021E43DAD007BFDC8 /* BRAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50742BEE21E43DAD007BFDC8 /* BRAboutUsViewController.xib */; };
+		50742BF621E497D2007BFDC8 /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50742BF521E497D2007BFDC8 /* launch_icon.png */; };
+		50742C1621E5FF71007BFDC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50742C1821E5FF71007BFDC8 /* InfoPlist.strings */; };
+		50742C1A21E5FF79007BFDC8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50742C1C21E5FF79007BFDC8 /* Localizable.strings */; };
 		50C4228021E337250038659A /* MFDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C4227F21E337250038659A /* MFDateFormatter.m */; };
 		50C4228421E338770038659A /* BRHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C4228221E338770038659A /* BRHomeTableViewCell.m */; };
 		50C4228521E338770038659A /* BRHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C4228321E338770038659A /* BRHomeTableViewCell.xib */; };
@@ -230,6 +237,19 @@
 		50742BE221E34C5F007BFDC8 /* BRDiaryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDiaryTableViewCell.h; sourceTree = "<group>"; };
 		50742BE321E34C5F007BFDC8 /* BRDiaryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRDiaryTableViewCell.m; sourceTree = "<group>"; };
 		50742BE421E34C5F007BFDC8 /* BRDiaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRDiaryTableViewCell.xib; sourceTree = "<group>"; };
+		50742BE721E436BE007BFDC8 /* BRAllDiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAllDiaryViewController.h; sourceTree = "<group>"; };
+		50742BE821E436BE007BFDC8 /* BRAllDiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRAllDiaryViewController.m; sourceTree = "<group>"; };
+		50742BE921E436BE007BFDC8 /* BRAllDiaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRAllDiaryViewController.xib; sourceTree = "<group>"; };
+		50742BEC21E43DAD007BFDC8 /* BRAboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAboutUsViewController.h; sourceTree = "<group>"; };
+		50742BED21E43DAD007BFDC8 /* BRAboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRAboutUsViewController.m; sourceTree = "<group>"; };
+		50742BEE21E43DAD007BFDC8 /* BRAboutUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BRAboutUsViewController.xib; sourceTree = "<group>"; };
+		50742BF521E497D2007BFDC8 /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
+		50742C1021E5FEBC007BFDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		50742C1121E5FEBE007BFDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		50742C1721E5FF71007BFDC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50742C1921E5FF73007BFDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		50742C1B21E5FF79007BFDC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50742C1D21E5FF7B007BFDC8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		50C4227E21E337240038659A /* MFDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFDateFormatter.h; sourceTree = "<group>"; };
 		50C4227F21E337250038659A /* MFDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDateFormatter.m; sourceTree = "<group>"; };
 		50C4228121E338770038659A /* BRHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRHomeTableViewCell.h; sourceTree = "<group>"; };
@@ -303,7 +323,10 @@
 				5025055221DDE5290055CA67 /* Main.storyboard */,
 				5025055521DDE53B0055CA67 /* Assets.xcassets */,
 				5025055721DDE53B0055CA67 /* LaunchScreen.storyboard */,
+				50742BF521E497D2007BFDC8 /* launch_icon.png */,
 				5025055A21DDE53B0055CA67 /* Info.plist */,
+				50742C1821E5FF71007BFDC8 /* InfoPlist.strings */,
+				50742C1C21E5FF79007BFDC8 /* Localizable.strings */,
 				5025062B21DDE9170055CA67 /* Header.h */,
 				5025062C21DDE9220055CA67 /* PrefixHeader.pch */,
 				5025055B21DDE53B0055CA67 /* main.m */,
@@ -592,6 +615,12 @@
 				5025064021DE04050055CA67 /* BRPersonViewController.h */,
 				5025064121DE04050055CA67 /* BRPersonViewController.m */,
 				5025063F21DE04050055CA67 /* BRPersonViewController.xib */,
+				50742BE721E436BE007BFDC8 /* BRAllDiaryViewController.h */,
+				50742BE821E436BE007BFDC8 /* BRAllDiaryViewController.m */,
+				50742BE921E436BE007BFDC8 /* BRAllDiaryViewController.xib */,
+				50742BEC21E43DAD007BFDC8 /* BRAboutUsViewController.h */,
+				50742BED21E43DAD007BFDC8 /* BRAboutUsViewController.m */,
+				50742BEE21E43DAD007BFDC8 /* BRAboutUsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -774,6 +803,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 5025054021DDE5290055CA67;
 			productRefGroup = 5025054A21DDE5290055CA67 /* Products */;
@@ -792,8 +822,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50742C1A21E5FF79007BFDC8 /* Localizable.strings in Resources */,
+				50742BF621E497D2007BFDC8 /* launch_icon.png in Resources */,
+				50742C1621E5FF71007BFDC8 /* InfoPlist.strings in Resources */,
 				50C4228521E338770038659A /* BRHomeTableViewCell.xib in Resources */,
 				5025055921DDE53B0055CA67 /* LaunchScreen.storyboard in Resources */,
+				50742BF021E43DAD007BFDC8 /* BRAboutUsViewController.xib in Resources */,
 				5025062721DDE8F40055CA67 /* BRIudgeViewController.xib in Resources */,
 				5025055621DDE53B0055CA67 /* Assets.xcassets in Resources */,
 				5025060521DDE8290055CA67 /* districts_bak.xml in Resources */,
@@ -804,6 +838,7 @@
 				50742BE621E34C5F007BFDC8 /* BRDiaryTableViewCell.xib in Resources */,
 				5025064221DE04050055CA67 /* BRPersonViewController.xib in Resources */,
 				5025064821DE04300055CA67 /* BRPersonalTableViewCell.xib in Resources */,
+				50742BEB21E436BE007BFDC8 /* BRAllDiaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,6 +918,7 @@
 			files = (
 				5025060921DDE8290055CA67 /* UIImage+ScaleImage.m in Sources */,
 				502505F821DDE8290055CA67 /* UIView+LBFrame.m in Sources */,
+				50742BEA21E436BE007BFDC8 /* BRAllDiaryViewController.m in Sources */,
 				502505FB21DDE8290055CA67 /* LBPhotoBrowserManager.m in Sources */,
 				502505E721DDE8290055CA67 /* MMCleanCacheManager.m in Sources */,
 				5025060E21DDE8290055CA67 /* JSFastLoginModel.m in Sources */,
@@ -911,6 +947,7 @@
 				5025060D21DDE8290055CA67 /* AllAlbumCollectionViewCell.m in Sources */,
 				50C4228421E338770038659A /* BRHomeTableViewCell.m in Sources */,
 				5025054E21DDE5290055CA67 /* AppDelegate.m in Sources */,
+				50742BEF21E43DAD007BFDC8 /* BRAboutUsViewController.m in Sources */,
 				5025063E21DDECA40055CA67 /* BRLeftSlideViewController.m in Sources */,
 				502505F721DDE8290055CA67 /* LBPhotoBrowserConst.m in Sources */,
 				5025064721DE04300055CA67 /* BRPersonalTableViewCell.m in Sources */,
@@ -977,6 +1014,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5025055321DDE5290055CA67 /* Base */,
+				50742C1021E5FEBC007BFDC8 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -985,8 +1023,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				5025055821DDE53B0055CA67 /* Base */,
+				50742C1121E5FEBE007BFDC8 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50742C1821E5FF71007BFDC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50742C1721E5FF71007BFDC8 /* en */,
+				50742C1921E5FF73007BFDC8 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50742C1C21E5FF79007BFDC8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50742C1B21E5FF79007BFDC8 /* en */,
+				50742C1D21E5FF7B007BFDC8 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -996,6 +1053,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1055,6 +1113,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

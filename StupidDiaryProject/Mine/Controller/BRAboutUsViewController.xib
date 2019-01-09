@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BRAboutUsViewController">
+            <connections>
+                <outlet property="bundleLabel" destination="lY6-DI-ibI" id="ac2-EG-2vG"/>
+                <outlet property="nameLabel" destination="i5M-Pr-FkT" id="L9R-M6-grs"/>
+                <outlet property="noteLabel" destination="0Nh-0W-IcK" id="u8E-da-LvW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="p3A-Dz-NiN">
+                    <rect key="frame" x="30" y="80" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4XG-jc-omJ"/>
+                        <constraint firstAttribute="height" constant="100" id="bWa-h7-xeW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目名称：笨笨日记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBd-Rb-mLZ">
+                    <rect key="frame" x="145" y="90" width="215" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目版本：V1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY6-DI-ibI">
+                    <rect key="frame" x="145" y="116" width="215" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目描述：笨笨日记是一款简单、方便的用于记录生活日常的日记应用。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nh-0W-IcK">
+                    <rect key="frame" x="145" y="142" width="215" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0Nh-0W-IcK" firstAttribute="top" secondItem="lY6-DI-ibI" secondAttribute="bottom" constant="10" id="50Q-Qp-vSG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="lY6-DI-ibI" secondAttribute="trailing" constant="15" id="8so-G7-nEd"/>
+                <constraint firstItem="p3A-Dz-NiN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="CI0-T4-d34"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="0Nh-0W-IcK" secondAttribute="trailing" constant="15" id="TY3-GV-sTn"/>
+                <constraint firstItem="p3A-Dz-NiN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="VUQ-iu-hOY"/>
+                <constraint firstItem="DBd-Rb-mLZ" firstAttribute="leading" secondItem="p3A-Dz-NiN" secondAttribute="trailing" constant="15" id="bGj-Eo-yMb"/>
+                <constraint firstItem="0Nh-0W-IcK" firstAttribute="leading" secondItem="p3A-Dz-NiN" secondAttribute="trailing" constant="15" id="fsQ-YA-LdD"/>
+                <constraint firstItem="DBd-Rb-mLZ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="lpK-pC-rnG"/>
+                <constraint firstItem="lY6-DI-ibI" firstAttribute="leading" secondItem="p3A-Dz-NiN" secondAttribute="trailing" constant="15" id="rgT-tK-9cy"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="DBd-Rb-mLZ" secondAttribute="trailing" constant="15" id="tmK-mz-nuv"/>
+                <constraint firstItem="lY6-DI-ibI" firstAttribute="top" secondItem="DBd-Rb-mLZ" secondAttribute="bottom" constant="10" id="zxT-nO-gNh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_icon" width="1024" height="1024"/>
+    </resources>
+</document>

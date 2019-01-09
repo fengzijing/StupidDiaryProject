@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  StupidDiaryProject
+
+  Created by 锋子 on 2019/1/9.
+  Copyright © 2019 锋子. All rights reserved.
+*/
+"日记" = "Diary";
+"开始写日记..." = "Start a journal...";
+
+"清除缓存" = "Clearc the cache";
+"关于我们" = "About us";
+"所有日记" = "All diaries";
+
+"nodata" = "en_nodata";
+
+"周六" = "SAT";
+"周日" = "SUN";
+"周一" = "MON";
+"周二" = "TUE";
+"周三" = "WED";
+"周四" = "THU";
+"周五" = "FRI";
+
+"个人信息" = "Personal information";
+"头像" = "Head portrait";
+"昵称" = "Nickname:";
+"个性签名" = "Personal signature:";
+"添加信息成功!" = "Information added successfully!";
+"请输入昵称" = "Please enter nickname";
+"请输入个性签名" = "Please enter your personal signature";
+"保存" = "Save";
+
+"是否清除缓存?" = "Clear cache?";
+"是" = "YES";
+"否" = "NO";
+"清除缓存成功！" = "Cleared cache successfully!";
+
+"隐私协议" = "Privacy agreement";
+"同意" = "Agreed to";
+"相册" = "Photo album";
+"相机" = "The camera";
+"多媒体" = "Multimedia";
+
+"正在加载~~~" = "Loading ~~~";
+"未连接网络" = "Unconnected network";
+
+"设置图像" = "Set the image";
+"提示" = "Prompt";
+"设备不支持访问相机，请在设置->隐私->相机中进行设置！" = "The device does not support access to the camera, please set it in Settings -> privacy -> camera!";
+"设备不支持访问相册，请在设置->隐私->照片中进行设置！" = "The device does not support access to albums, please set in Settings -> privacy -> photos!";
+"设备不支持访问多媒体，请在设置->隐私->照片中进行设置！" = "The device does not support access to multimedia, please set in Settings -> privacy -> photos!";

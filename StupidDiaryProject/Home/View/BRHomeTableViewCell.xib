@@ -57,21 +57,13 @@
                                 <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR4-MY-PH2">
-                                <rect key="frame" x="195" y="129.5" width="40" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="V45-xM-v7s"/>
-                                    <constraint firstAttribute="width" constant="40" id="jYg-Ep-ppF"/>
-                                </constraints>
-                                <state key="normal" image="add_games"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-A7-XLH">
                                 <rect key="frame" x="245" y="129.5" width="40" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Iih-jM-khA"/>
                                     <constraint firstAttribute="height" constant="35" id="U26-bt-fex"/>
                                 </constraints>
-                                <state key="normal" image="add_games"/>
+                                <state key="normal" image="br_delete"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,10 +81,8 @@
                             <constraint firstItem="8Hw-do-e91" firstAttribute="leading" secondItem="jM5-Xn-G2A" secondAttribute="leading" constant="15" id="alW-Ww-szW"/>
                             <constraint firstItem="0Di-Xz-0ut" firstAttribute="leading" secondItem="jM5-Xn-G2A" secondAttribute="leading" constant="15" id="igS-Bw-cxx"/>
                             <constraint firstAttribute="bottom" secondItem="W9x-A7-XLH" secondAttribute="bottom" constant="5" id="kbj-od-hcT"/>
-                            <constraint firstItem="W9x-A7-XLH" firstAttribute="leading" secondItem="kR4-MY-PH2" secondAttribute="trailing" constant="10" id="lqJ-ue-iDV"/>
                             <constraint firstItem="aGv-9a-ixY" firstAttribute="leading" secondItem="jM5-Xn-G2A" secondAttribute="leading" constant="15" id="mg8-Ng-sMY"/>
                             <constraint firstAttribute="trailing" secondItem="0Di-Xz-0ut" secondAttribute="trailing" constant="15" id="pof-0Y-LEO"/>
-                            <constraint firstAttribute="bottom" secondItem="kR4-MY-PH2" secondAttribute="bottom" constant="5" id="qGA-Xx-F5q"/>
                             <constraint firstItem="0Di-Xz-0ut" firstAttribute="top" secondItem="jM5-Xn-G2A" secondAttribute="top" constant="40" id="yj0-zn-GBd"/>
                         </constraints>
                     </view>
@@ -111,7 +101,6 @@
                 <outlet property="bgView" destination="jM5-Xn-G2A" id="jKD-DM-fkH"/>
                 <outlet property="dateLabel" destination="5UP-Re-Be1" id="A7F-Jv-GlA"/>
                 <outlet property="deleteBtn" destination="W9x-A7-XLH" id="Ubs-Af-XDs"/>
-                <outlet property="diaryBtn" destination="kR4-MY-PH2" id="BA6-K7-F9o"/>
                 <outlet property="noteLabel" destination="aGv-9a-ixY" id="tFT-yq-qZY"/>
                 <outlet property="timeLabel" destination="8Hw-do-e91" id="JQy-8a-WQa"/>
                 <outlet property="weekLabel" destination="BMe-VI-QJO" id="rO0-V0-Reg"/>
@@ -120,6 +109,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="add_games" width="20" height="20"/>
+        <image name="br_delete" width="24" height="24"/>
     </resources>
 </document>

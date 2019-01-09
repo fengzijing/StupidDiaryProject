@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  StupidDiaryProject
+
+  Created by 锋子 on 2019/1/9.
+  Copyright © 2019 锋子. All rights reserved.
+*/
+
+CFBundleDisplayName = "BenbenDiary";
+
+"NSPhotoLibraryUsageDescription" = "BenbenDiary needs to access your album to help complete your personal portrait replacement";
+"NSCameraUsageDescription" = "BenbenDiary needs to access your camera to help complete your personal portrait replacement";
+"NSAppleMusicUsageDescription" = "BenbenDiary needs to access your multimedia to help complete your personal portrait replacement";
+"NSCalendarsUsageDescription" = "BenbenDiary request permission to access your calendar information";

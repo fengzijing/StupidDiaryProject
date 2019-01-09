@@ -212,7 +212,7 @@
 
 - (void)setEmptyViewStatus:(SMTBEmptyType)type
 {
-    self.emptyImage = NSLocalizedString(@"nodata", nil);
+    self.emptyImage = NSLocalizedString(@"md_nodata", nil);
     self.emptyMsg = @"";
 }
 

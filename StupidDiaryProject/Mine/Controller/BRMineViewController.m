@@ -6,12 +6,16 @@
 //  Copyright © 2019 锋子. All rights reserved.
 //
 
-const CGFloat BackGroupHeight = 120;
+const CGFloat BackGroupHeight = 125;
 const CGFloat HeadImageHeight= 60;
 
 #import "BRMineViewController.h"
 #import "AppDelegate.h"
 #import "BRPersonViewController.h"
+#import "BRAllDiaryViewController.h"
+#import "MMCleanCacheManager.h"
+#import "BRDelegateViewController.h"
+#import "BRAboutUsViewController.h"
 
 @interface BRMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -27,9 +31,9 @@ const CGFloat HeadImageHeight= 60;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor = [UIColor blackColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
     UIImageView *imageview = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    imageview.image = [UIImage imageNamed:@"leftbackiamge"];
+    imageview.image = [UIImage imageNamed:@"bottom_image"];
     [self.view addSubview:imageview];
     
     UITableView *tableview = [[UITableView alloc] init];
@@ -66,9 +70,10 @@ const CGFloat HeadImageHeight= 60;
 {
     imageBG = [[UIImageView alloc]init];
     imageBG.frame=CGRectMake(0, -BackGroupHeight, ScreenWidth, BackGroupHeight);
-    imageBG.image=[UIImage imageNamed:@"background_image.jpg"];
-    imageBG.contentMode = UIViewContentModeScaleAspectFill;
-    imageBG.layer.masksToBounds = YES;
+    //imageBG.image=[UIImage imageNamed:@"background_image.jpg"];
+    //imageBG.contentMode = UIViewContentModeScaleAspectFill;
+    //imageBG.layer.masksToBounds = YES;
+    imageBG.backgroundColor = SMColorFromRGB(0x777CB5);
     [self.tableview addSubview:imageBG];
     
     UIView *BGView=[[UIView alloc]init];
@@ -78,14 +83,14 @@ const CGFloat HeadImageHeight= 60;
     
     //
     headImageView=[[UIImageView alloc]init];
-    headImageView.image=[UIImage imageNamed:@"type_3c copy"];
+    headImageView.image=[UIImage imageNamed:@"br_camera"];
     headImageView.layer.cornerRadius = 30;
     headImageView.layer.masksToBounds = YES;
     [BGView addSubview:headImageView];
     
     [headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(BGView.mas_left).offset(20);
-        make.top.equalTo(BGView.mas_top).offset(30);
+        make.top.equalTo(BGView.mas_top).offset(40);
         make.width.mas_offset(HeadImageHeight);
         make.height.mas_offset(HeadImageHeight);
     }];
@@ -191,7 +196,7 @@ const CGFloat HeadImageHeight= 60;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -208,27 +213,45 @@ const CGFloat HeadImageHeight= 60;
     cell.textLabel.textColor = [UIColor whiteColor];
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"所有日记";
+        cell.textLabel.text = NSLocalizedString(@"所有日记", nil);
     } else if (indexPath.row == 1) {
-        cell.textLabel.text = @"意见反馈";
+        cell.textLabel.text = NSLocalizedString(@"隐私协议", nil);
     } else if (indexPath.row == 2) {
-        cell.textLabel.text = @"隐私协议";
+        cell.textLabel.text = NSLocalizedString(@"清除缓存", nil);
     } else if (indexPath.row == 3) {
-        cell.textLabel.text = @"清除缓存";
-    } else if (indexPath.row == 4) {
-        cell.textLabel.text = @"关于我们";
+        cell.textLabel.text = NSLocalizedString(@"关于我们", nil);
     }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    otherViewController *vc = [[otherViewController alloc] init];
-    [tempAppDelegate.LeftSlideVC closeLeftView];//关闭左侧抽屉
-    
-//    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+    if (indexPath.row == 2) {
+        WS(wSelf);
+        JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:NSLocalizedString(@"是否清除缓存?", nil)  textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
+        [alter showAlertView:NSLocalizedString(@"否", nil) sureTitle:NSLocalizedString(@"是", nil) cancelBlock:^{
+            
+        } sureBlock:^{
+            [[MMCleanCacheManager Cachesclear] clearAllCaches];
+            [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"清除缓存成功！", nil)];
+            [wSelf.tableview reloadData];
+        }];
+    } else {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        [tempAppDelegate.LeftSlideVC closeLeftView];//关闭左侧抽屉
+        if (indexPath.row == 0) {
+            BRAllDiaryViewController *vc = [[BRAllDiaryViewController alloc] init];
+            [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+        } else if (indexPath.row == 1) {
+            BRDelegateViewController *vc = [[BRDelegateViewController alloc] init];
+            vc.isMine = YES;
+            [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+        } else {
+            BRAboutUsViewController *vc = [[BRAboutUsViewController alloc] init];
+            [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+        }
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
