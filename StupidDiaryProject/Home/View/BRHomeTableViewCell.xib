@@ -58,10 +58,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-A7-XLH">
-                                <rect key="frame" x="245" y="129.5" width="40" height="35"/>
+                                <rect key="frame" x="245" y="131" width="40" height="33.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Iih-jM-khA"/>
-                                    <constraint firstAttribute="height" constant="35" id="U26-bt-fex"/>
+                                    <constraint firstAttribute="height" constant="33.5" id="U26-bt-fex"/>
                                 </constraints>
                                 <state key="normal" image="br_delete"/>
                             </button>
@@ -79,6 +79,7 @@
                             <constraint firstAttribute="trailing" secondItem="aGv-9a-ixY" secondAttribute="trailing" constant="15" id="VHA-3Z-Jmq"/>
                             <constraint firstItem="0Di-Xz-0ut" firstAttribute="top" secondItem="5UP-Re-Be1" secondAttribute="bottom" id="ZGT-MW-26u"/>
                             <constraint firstItem="8Hw-do-e91" firstAttribute="leading" secondItem="jM5-Xn-G2A" secondAttribute="leading" constant="15" id="alW-Ww-szW"/>
+                            <constraint firstItem="W9x-A7-XLH" firstAttribute="top" secondItem="aGv-9a-ixY" secondAttribute="bottom" id="b8Y-pj-qqs"/>
                             <constraint firstItem="0Di-Xz-0ut" firstAttribute="leading" secondItem="jM5-Xn-G2A" secondAttribute="leading" constant="15" id="igS-Bw-cxx"/>
                             <constraint firstAttribute="bottom" secondItem="W9x-A7-XLH" secondAttribute="bottom" constant="5" id="kbj-od-hcT"/>
                             <constraint firstItem="aGv-9a-ixY" firstAttribute="leading" secondItem="jM5-Xn-G2A" secondAttribute="leading" constant="15" id="mg8-Ng-sMY"/>

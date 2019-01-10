@@ -60,6 +60,11 @@
         [JSUserInfo shareManager].signature = self.signature;
     }
     
+    if ([JSUserInfo shareManager].header_image == nil && [JSUserInfo shareManager].nickName.length == 0 && [JSUserInfo shareManager].signature.length == 0) {
+        [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"请添加信息", nil)];
+        return;
+    }
+    
     [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"添加信息成功!", nil)];
     [self.navigationController popViewControllerAnimated:YES];
     [[NSNotificationCenter defaultCenter]postNotificationName:@"changePersonInformation" object:nil userInfo:nil];

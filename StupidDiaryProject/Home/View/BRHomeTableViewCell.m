@@ -30,7 +30,16 @@
     [super awakeFromNib];
     self.bgView.layer.cornerRadius = 5;
     self.bgView.layer.masksToBounds = YES;
+//    UIBezierPath *shadowPath = [UIBezierPath
+//                                bezierPathWithRect:self.bgView.bounds];
+//    self.bgView.layer.masksToBounds = NO;
+//    self.bgView.layer.shadowColor = SMColorFromRGB(0x808080).CGColor;
+//    self.bgView.layer.shadowOffset = CGSizeMake(0.0f, 2.0f);
+//    self.bgView.layer.shadowOpacity = 0.5f;
+//    self.bgView.layer.shadowPath = shadowPath.CGPath;
 }
+
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

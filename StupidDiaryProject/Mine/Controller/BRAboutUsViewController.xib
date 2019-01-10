@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BRAboutUsViewController">
             <connections>
                 <outlet property="bundleLabel" destination="lY6-DI-ibI" id="ac2-EG-2vG"/>
-                <outlet property="nameLabel" destination="i5M-Pr-FkT" id="L9R-M6-grs"/>
+                <outlet property="nameLabel" destination="DBd-Rb-mLZ" id="2SN-Ok-WcN"/>
                 <outlet property="noteLabel" destination="0Nh-0W-IcK" id="u8E-da-LvW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

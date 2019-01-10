@@ -213,7 +213,7 @@ const CGFloat HeadImageHeight= 60;
     cell.textLabel.textColor = [UIColor whiteColor];
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = NSLocalizedString(@"所有日记", nil);
+        cell.textLabel.text = NSLocalizedString(@"全部日记", nil);
     } else if (indexPath.row == 1) {
         cell.textLabel.text = NSLocalizedString(@"隐私协议", nil);
     } else if (indexPath.row == 2) {

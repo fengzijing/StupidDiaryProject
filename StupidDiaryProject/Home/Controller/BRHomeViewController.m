@@ -94,7 +94,6 @@
 
 -(void)beginWriteDiary{
     BRDiaryViewController * diaryVC = [[BRDiaryViewController alloc]init];
-    diaryVC.hidesBottomBarWhenPushed = YES;
     diaryVC.isEditor = YES;
     [self.navigationController pushViewController:diaryVC animated:YES];
 }
@@ -289,10 +288,10 @@
 }
 
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 190;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 190;
+//}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -319,7 +318,7 @@
     JSFastLoginModel * model = self.dataArr[indexPath.row];
     BRHomeTableViewCell* cell = [BRHomeTableViewCell cellWithTableView:tableView];
     cell.dateLabel.text = model.class_date;
-    cell.weekLabel.text = model.class_week;
+    cell.weekLabel.text = NSLocalizedString(model.class_week, nil);
     cell.noteLabel.text = model.class_note;
     cell.timeLabel.text = model.class_hour;
     [cell.deleteBtn addTarget:self action:@selector(deleteDiary:) forControlEvents:UIControlEventTouchUpInside];
@@ -339,7 +338,7 @@
 
 -(void)deleteDiary:(UIButton*)sender{
     WS(wSelf);
-    JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:NSLocalizedString(@"确定删除该日记？", nil)  textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
+    JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:nil  textArray:@[NSLocalizedString(@"确定删除该日记？", nil)] textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
     [alter showAlertView:NSLocalizedString(@"否", nil) sureTitle:NSLocalizedString(@"是", nil) cancelBlock:^{
         
     } sureBlock:^{

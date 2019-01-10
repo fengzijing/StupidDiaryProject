@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"全部日记";
+    self.navigationItem.title = NSLocalizedString(@"全部日记", nil);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.dataArr = [JSUserInfo shareManager].allArray;
@@ -30,6 +30,13 @@
         self.dataArr = [JSUserInfo shareManager].allArray;
         [self.tableView reloadData];
     }];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"add_games"] style:UIBarButtonItemStylePlain target:self action:@selector(addDiary)];
+}
+
+-(void)addDiary{
+    BRDiaryViewController * diaryVC = [[BRDiaryViewController alloc]init];
+    diaryVC.isEditor = YES;
+    [self.navigationController pushViewController:diaryVC animated:YES];
 }
 
 #pragma mark -- UITableView
@@ -49,10 +56,10 @@
 }
 
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 190;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 190;
+//}
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -79,7 +86,7 @@
     JSFastLoginModel * model = self.dataArr[indexPath.row];
     BRHomeTableViewCell* cell = [BRHomeTableViewCell cellWithTableView:tableView];
     cell.dateLabel.text = model.class_date;
-    cell.weekLabel.text = model.class_week;
+    cell.weekLabel.text = NSLocalizedString(model.class_week, nil);
     cell.noteLabel.text = model.class_note;
     cell.timeLabel.text = model.class_hour;
     [cell.deleteBtn addTarget:self action:@selector(deleteDiary:) forControlEvents:UIControlEventTouchUpInside];

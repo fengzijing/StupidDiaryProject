@@ -25,7 +25,7 @@
                         <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="type_3c copy" translatesAutoresizingMaskIntoConstraints="NO" id="15w-ka-Fmv">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="br_camera" translatesAutoresizingMaskIntoConstraints="NO" id="15w-ka-Fmv">
                         <rect key="frame" x="248" y="5" width="40" height="40"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -69,7 +69,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="br_camera" width="50" height="50"/>
         <image name="po_right_arrow" width="7.5" height="16"/>
-        <image name="type_3c copy" width="50" height="50"/>
     </resources>
 </document>

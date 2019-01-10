@@ -19,9 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"日记";
+    self.navigationItem.title = NSLocalizedString(@"日记", nil);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"保存", nil) style:UIBarButtonItemStylePlain target:self action:@selector(saveDiary)];
     if (self.isEditor) {
         [self customTimeModel];
@@ -29,7 +30,7 @@
 }
 
 -(void)customTimeModel{
-    NSArray * arrWeek=[NSArray arrayWithObjects:NSLocalizedString(@"周六", nil),NSLocalizedString(@"周日", nil),NSLocalizedString(@"周一", nil),NSLocalizedString(@"周二", nil),NSLocalizedString(@"周三", nil),NSLocalizedString(@"周四", nil),NSLocalizedString(@"周五", nil), nil];
+    NSArray * arrWeek=[NSArray arrayWithObjects:@"周六",@"周日",NSLocalizedString(@"周一", nil),@"周二",@"周三",@"周四",@"周五", nil];
     NSDate *date = [NSDate date];
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *comps = [[NSDateComponents alloc] init];
@@ -45,7 +46,7 @@
 
 -(void)saveDiary{
     if (self.model.class_note.length==0) {
-        [SVProgressHUD showInfoWithStatus:@"请填写您的日记"];
+        [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"请填写您的日记", nil)];
         return;
     }
     NSMutableArray * array = [JSUserInfo shareManager].allArray;
@@ -122,9 +123,9 @@
     [self.tableView reloadData];
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [self.view endEditing:YES];
-}
+//-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    [self.view endEditing:YES];
+//}
 
 -(JSFastLoginModel *)model{
     if (!_model) {

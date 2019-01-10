@@ -5,12 +5,19 @@
   Created by 锋子 on 2019/1/9.
   Copyright © 2019 锋子. All rights reserved.
 */
+
+"项目名称：笨笨日记" = "Project name: BenbenDiary";
+"项目版本：V1.0.0" = "Project version: V1.0.0";
+"项目描述：笨笨日记是一款简单、方便的用于记录生活日常的日记应用。" = "Project description: benben diary is a simple and convenient diary application for recording daily life.";
+
 "日记" = "Diary";
 "开始写日记..." = "Start a journal...";
+"请填写您的日记" = "Please fill in your diary";
+"确定删除该日记？" = "Are you sure you want to delete the diary?";
 
 "清除缓存" = "Clearc the cache";
 "关于我们" = "About us";
-"所有日记" = "All diaries";
+"全部日记" = "All the diary";
 
 "nodata" = "en_nodata";
 
@@ -30,6 +37,7 @@
 "请输入昵称" = "Please enter nickname";
 "请输入个性签名" = "Please enter your personal signature";
 "保存" = "Save";
+"请添加信息" = "Please add information";
 
 "是否清除缓存?" = "Clear cache?";
 "是" = "YES";
