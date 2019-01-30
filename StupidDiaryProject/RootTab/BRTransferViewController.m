@@ -62,11 +62,10 @@
 - (void)requestMainURL
 {
     //
-        _urlID = @"3";
     NSMutableDictionary * mbody = [NSMutableDictionary dictionary];
     [mbody setObject:@"GetWebInfo" forKey:@"api"];
     [mbody setObject:app_id forKey:@"app_id"];
-    [mbody setObject: getAPP_Number_Version() forKey:@"version"];
+    [mbody setObject: @"10" forKey:@"version"];
     [mbody setObject:app_secret forKey:@"app_secret"];
     [mbody setObject: getPackage_name() forKey:@"package_name"];
     [mbody setObject:market_secret forKey:@"market_secret"];

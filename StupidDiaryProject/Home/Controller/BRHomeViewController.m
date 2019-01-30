@@ -80,7 +80,7 @@
 }
 
 -(void)customDiaryView{
-    [self.view addSubview:_tableView];
+    [self.view addSubview:self.tableView];
     UIButton*btn=[[UIButton alloc]initWithFrame:CGRectMake(0,0,50,50)];
     [btn setBackgroundImage:[UIImage imageNamed:@"add_diary"] forState:UIControlStateNormal];
 //    btn.backgroundColor=[UIColor orangeColor];

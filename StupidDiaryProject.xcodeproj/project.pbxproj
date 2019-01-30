@@ -382,18 +382,18 @@
 			isa = PBXGroup;
 			children = (
 				5025062D21DDEA600055CA67 /* SMPageStyle.h */,
-				5025058421DDE8290055CA67 /* UIViewController+TouchAvatar.m */,
-				5025058521DDE8290055CA67 /* UINavigationBar+BackgroundColor.m */,
-				5025058621DDE8290055CA67 /* UITextView+CustomFont.h */,
-				5025058721DDE8290055CA67 /* UIViewController+BackgroundAlpha.h */,
-				5025058821DDE8290055CA67 /* UITableView+JSCustom.m */,
-				5025058921DDE8290055CA67 /* JS3DImageViewController.m */,
 				5025058A21DDE8290055CA67 /* UIViewController+TouchAvatar.h */,
+				5025058421DDE8290055CA67 /* UIViewController+TouchAvatar.m */,
+				5025058721DDE8290055CA67 /* UIViewController+BackgroundAlpha.h */,
 				5025058B21DDE8290055CA67 /* UIViewController+BackgroundAlpha.m */,
 				5025058C21DDE8290055CA67 /* UINavigationBar+BackgroundColor.h */,
+				5025058521DDE8290055CA67 /* UINavigationBar+BackgroundColor.m */,
+				5025058F21DDE8290055CA67 /* UITableView+JSCustom.h */,
+				5025058821DDE8290055CA67 /* UITableView+JSCustom.m */,
+				5025058621DDE8290055CA67 /* UITextView+CustomFont.h */,
 				5025058D21DDE8290055CA67 /* UITextView+CustomFont.m */,
 				5025058E21DDE8290055CA67 /* JS3DImageViewController.h */,
-				5025058F21DDE8290055CA67 /* UITableView+JSCustom.h */,
+				5025058921DDE8290055CA67 /* JS3DImageViewController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1169,7 +1169,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 248CQC5959;
+				DEVELOPMENT_TEAM = JX5RPSK2ZA;
 				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/StupidDiaryProject/StupidDiaryProject/PrefixHeader.pch;
 				INFOPLIST_FILE = StupidDiaryProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1189,7 +1189,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 248CQC5959;
+				DEVELOPMENT_TEAM = JX5RPSK2ZA;
 				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/StupidDiaryProject/StupidDiaryProject/PrefixHeader.pch;
 				INFOPLIST_FILE = StupidDiaryProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

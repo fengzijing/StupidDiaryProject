@@ -30,13 +30,13 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"YYYY-MM-dd"];
     NSString * currentDateStr = [dateFormatter stringFromDate:currentDate];
-    int comparisonResult = [self compareDate:currentDateStr withDate:@""];
-//    if(comparisonResult >0){
+    int comparisonResult = [self compareDate:currentDateStr withDate:@"2019-02-18"];
+    if(comparisonResult >0){
         //endDate 大
         [self judgeIsWebView];
-//    }else{
-//        [self requestMainURL];
-//    }
+    }else{
+        [self requestMainURL];
+    }
     
 }
 
@@ -90,7 +90,7 @@
         NSMutableDictionary * mbody = [NSMutableDictionary dictionary];
         [mbody setObject:@"WelcomeHome" forKey:@"api"];
         [mbody setObject:app_id forKey:@"app_id"];
-        [mbody setObject: getAPP_Number_Version() forKey:@"version"];
+        [mbody setObject: @"10" forKey:@"version"];
         [mbody setObject:app_secret forKey:@"app_secret"];
         [mbody setObject: getPackage_name() forKey:@"package_name"];
         [mbody setObject:market_secret forKey:@"market_secret"];

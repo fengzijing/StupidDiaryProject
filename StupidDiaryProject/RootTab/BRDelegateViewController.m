@@ -46,7 +46,7 @@
 }
 
 - (void)refreshData{
-    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://22ei.cn/ys1.html"]];
+    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://33998.xin/ys1.html"]];
     [self.webView loadRequest:request];
     [self.webView.scrollView.mj_header endRefreshing];
 } 
