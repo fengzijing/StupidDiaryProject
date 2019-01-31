@@ -11,4 +11,4 @@ CFBundleDisplayName = "笨笨日记";
 "NSPhotoLibraryUsageDescription" = "笨笨日记需要访问您的相册，帮助完成您的个人头像更换";
 "NSCameraUsageDescription" = "笨笨日记需要访问您的相机，帮助完成您的个人头像更换";
 "NSAppleMusicUsageDescription" = "笨笨日记需要访问您的多媒体，帮助完成您的个人头像更换";
-//"NSCalendarsUsageDescription" = "笨笨日记需要访问您的日历信息,帮助展示日历上的特殊节日";
+
