@@ -76,7 +76,9 @@
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
     //日历events
-    [self requestAccessToEntityType];
+//    if ([self preferredLanguageChiness]) {
+//        [self requestAccessToEntityType];
+//    }
 }
 
 -(void)customDiaryView{
