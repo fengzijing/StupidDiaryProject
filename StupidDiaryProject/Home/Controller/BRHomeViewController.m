@@ -76,9 +76,10 @@
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
     //日历events
-    if ([self preferredLanguageChiness]) {
-        [self requestAccessToEntityType];
-    }
+//    if ([self preferredLanguageChiness]) {
+//        [self requestAccessToEntityType];
+//    }
+    
 }
 
 -(void)customDiaryView{
@@ -108,8 +109,8 @@
     
     [recognizer setTranslation:CGPointZero inView:self.view];
     
-    if (recognizer.view.center.y+translation.y > ScreenHeight-100) {
-        recognizer.view.center=CGPointMake(centerX, ScreenHeight-100);
+    if (recognizer.view.center.y+translation.y > ScreenHeight-120) {
+        recognizer.view.center=CGPointMake(centerX, ScreenHeight-120);
     } else if (recognizer.view.center.y+translation.y < 25) {
         recognizer.view.center=CGPointMake(centerX, 25);
     } else {
@@ -224,6 +225,7 @@
             weakSelf.events = events;
         }
     }];
+    
 }
 
 - (NSArray*)eventsForDate:(NSDate *)date{

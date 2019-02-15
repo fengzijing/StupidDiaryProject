@@ -11,4 +11,4 @@ CFBundleDisplayName = "BenbenDiary";
 "NSPhotoLibraryUsageDescription" = "BenbenDiary needs to access your album to help complete your personal portrait replacement";
 "NSCameraUsageDescription" = "BenbenDiary needs to access your camera to help complete your personal portrait replacement";
 "NSAppleMusicUsageDescription" = "BenbenDiary needs to access your multimedia to help complete your personal portrait replacement";
-"NSCalendarsUsageDescription" = "BenbenDiary needs to access your calendar information to help show special holidays on the calendar";
+//"NSCalendarsUsageDescription" = "BenbenDiary needs to access your calendar information to help show special holidays on the calendar";
