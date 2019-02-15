@@ -76,9 +76,7 @@
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
     //日历events
-//    if ([self preferredLanguageChiness]) {
-//        [self requestAccessToEntityType];
-//    }
+    [self requestAccessToEntityType];
     
 }
 
@@ -164,7 +162,10 @@
     self.calendar.appearance.weekdayTextColor = SMColorFromRGB(0xA9A9A9);
     self.calendar.appearance.todayColor = SMColorFromRGB(0xeb5300);
     self.calendar.appearance.selectionColor = SMColorFromRGB(0x777CB5);
-    self.calendar.appearance.subtitleFont = [UIFont systemFontOfSize:10.0];
+    self.calendar.appearance.subtitleFont = [UIFont systemFontOfSize:8.0];
+    if ([self preferredLanguageChiness]) {
+        self.calendar.appearance.subtitleFont = [UIFont systemFontOfSize:10.0];
+    }
     self.calendar.appearance.titleFont = [UIFont systemFontOfSize:12.0];
 }
 
@@ -236,12 +237,11 @@
 }//返回特殊节日的方法
 
 - (NSString *)calendar:(FSCalendar *)calendar subtitleForDate:(NSDate *)date{
+    EKEvent *event = [self eventsForDate:date].firstObject;
+    if (event) {
+        return event.title;
+    }
     if ([self preferredLanguageChiness]) {
-        EKEvent *event = [self eventsForDate:date].firstObject;
-        if (event) {
-            return event.title;
-        }
-        
         NSInteger day = [chinessCalendar component:NSCalendarUnitDay fromDate:date];
         if (day == 1) {
             NSInteger month = [chinessCalendar component:NSCalendarUnitMonth fromDate:date];
